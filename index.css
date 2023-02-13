@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+}
+.conteiner .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.conteiner .img-container .img {
+    width: 300px;
+    height: 250px;
+    border: 10px solid #fff;
+    overflow: hidden;
+
+}
+.conteiner .img-container .img 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.conteiner .img-container .img:hover img{
+    transform: scale(1.1);
+}
+.conteiner .pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .8);
+    display: none;
+
+}
+.conteiner .pop-up img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 5px solid #fff;
+    width: 700px;
+}
+
+.conteiner .pop-up span {
+    position: fixed;
+    top:10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
